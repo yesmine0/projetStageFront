@@ -1,0 +1,13 @@
+<p style="color: rgb(56, 51, 51);font-size: larger; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-style: oblique;font-style: italic; text-align:justify;text-decoration-line: underline;">
+    Click on the microphone icon and begin speaking for as long as you like.
+  </p>
+  <button (click)="playSound()" type="button" style="color: black; border-color: black; font-size: larger; display: inline-block;">
+    enregistrer <img src="https://cdn-icons-png.flaticon.com/512/5038/5038692.png" width="15" height="15">
+  </button>
+  <br>
+  <textarea name="message" placeholder="Entrez votre commande" style="height: 400px; width: 700px;" [(ngModel)]="message"></textarea>
+  <br>
+  <button (click)="createBox()" style="color: black; border-color: black; font-size: larger;">
+    envoyez
+  </button>
+  
